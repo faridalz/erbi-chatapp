@@ -1,11 +1,7 @@
 import React, {useContext} from 'react'
-// import {auth, db} from '../firebase';
-// import { updateDoc, doc } from 'firebase/firestore';
 import { AuthContext } from '../context';
-// import { useNavigate } from 'react-router-dom';
 import Login from './Login'
 import Register from './Register'
-import {Profile} from './Profile'
 import {Routes, Route} from "react-router-dom";
 import {Home} from './Home'
 import { Navbar } from './Navbar';
@@ -38,7 +34,6 @@ export const AllRoutes = () => {
   
     <Routes>
             <Route path="/register" element={<Register />} />
-            <Route path="/profile" element={<Profile />} />   
             {user ? 
             <>
             (<Route path="/" element={<Home toggleIt={toggleIt} />} />) 
