@@ -566,13 +566,17 @@ outline: none;
 
 .message_wrapper.own {
   text-align: right;
+  border-bottom-left-radius: 0%;
+
 }
-.me {
+.message_wrapper .me {
   background: rgb(41, 41, 122);
   color: white;
+  border-bottom-right-radius: 0%;
 }
-.friend {
+.message_wrapper .friend {
   background: rgb(154, 218, 173);
+  border-bottom-left-radius: 0%;
 }
 
 
